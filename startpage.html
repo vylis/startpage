@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>welcome to the internet</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/favicon.PNG" />
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    </head>
+        <body>    
+                <header>
+                    <div class="time" id="time">
+                        <script>
+                            function clock() {
+                                var days = ['SUNDAY','MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY'];
+                                var m = new Date();
+                                var dateString =
+                                (days[ m.getDay() ]) + " " +
+                                m.getFullYear() +"/"+
+                                ("0" + (m.getMonth()+1)).slice(-2) +"/"+
+                                ("0" + m.getDate()).slice(-2) + " " +
+                                ("0" + m.getHours()).slice(-2) + ":" +
+                                ("0" + m.getMinutes()).slice(-2) + ":" +
+                                ("0" + m.getSeconds()).slice(-2);
+                                document.getElementById('time').innerHTML = dateString;
+                                setTimeout(clock, 1000);
+                            }
+                            clock(); 
+                        </script>
+                    </div>
+                    <form id="search-form" action="https://www.google.fr/search" target="_blank" method="get" >
+                        <div id="search-bar-wrapper">
+                            <input id="search-bar" name="q" type="text" title="Search" onfocus="this.value=''"/>
+                        </form>   
+                        </div>
+                </header>
+
+                <div id="container">
+                    <div id="links">
+                        <ul class="main">
+                            <li class="blue">/main</li>                   
+                            <li><a target="_blank" href="https://docs.google.com/document/u/0/">docs</a><li>
+                            <li><a target="_blank" href="https://drive.google.com/drive/my-drive">drive</a><li>
+                            <li><a target="_blank" href="https://github.com/Vylis?tab=repositories">git</a><li>
+                            <li><a target="_blank" href="https://mail.google.com/mail/u/0/#inbox">mail</a><li>
+                            <li><a target="_blank" href="https://twitter.com/home">twitter</a><li>
+                        </ul>
+                        <ul class="music">
+                            <li class="green">/music</li>
+                            <li><a target="_blank" href="https://bandcamp.com/">bandcamp</a><li>
+                            <li><a target="_blank" href="https://soundcloud.com/discover">soundcloud</a><li>
+                            <li><a target="_blank" href="https://www.youtube.com/feed/subscriptions">youtube</a><li>
+                        </ul>
+                        <ul class="stream">
+                            <li class="blue">/stream</li>
+                            <li><a target="_blank" href="https://animedigitalnetwork.fr/">adn</a><li>
+                            <li><a target="_blank" href="https://www.crunchyroll.com/fr">crunchyroll</a><li>
+                            <li><a target="_blank" href="https://www.disneyplus.com/fr-fr/home">disney+</a><li></li>
+                            <li><a target="_blank" href="https://www.netflix.com/browse">netflix</a><li></li>
+                            <li><a target="_blank" href="https://www.primevideo.com/">prime</a><li></li>
+                        </ul>
+                        <ul class="pics">
+                            <li class="green">/pictures</li>
+                            <li><a target="_blank" href="https://cabinporn.com/">cabinporn</a><li>
+                            <li><a target="_blank" href="https://www.pexels.com/">pexels</a><li>
+                            <li><a target="_blank" href="https://unsplash.com/">unsplash</a><li>
+                        </ul>
+                        <ul class="chan">
+                            <li class="blue">/4chan</li>
+                            <li><a target="_blank" href="https://boards.4channel.org/a/catalog">/a/</a><li>
+                            <li><a target="_blank" href="https://boards.4channel.org/c/catalog">/c/</a><li>
+                            <li><a target="_blank" href="https://boards.4channel.org/g/catalog">/g/</a><li>
+                            <li><a target="_blank" href="https://boards.4channel.org/w/catalog">/w/</a><li>
+                            <li><a target="_blank" href="http://boards.4chan.org/wg/catalog">/wg/</a><li>
+                        </ul>
+                        <ul class="reddit">
+                            <li class="green">/reddit</li>
+                            <li><a target="_blank" href="https://www.reddit.com/r/MechanicalKeyboards/">/keeb</a><li>
+                            <li><a target="_blank" href="https://www.reddit.com/r/guitarpedals/">/pedals</a><li></li>
+                            <li><a target="_blank" href="https://www.reddit.com/r/synthesizers/">/synth</a><li></li>
+                        </ul>
+                </div>
+            </div>
+        </body>
+</html>
