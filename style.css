@@ -1,6 +1,9 @@
 body {
   background-color: rgb(40, 40, 40);
   font-family: "Fira Code", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -28,7 +31,7 @@ header {
   border: 2px #ffffff groove;
   color: #ffffff;
   height: 25px;
-  width: 268px;
+  width: 100%;
   text-align: center;
 }
 
@@ -36,6 +39,7 @@ header {
   display: flex;
   justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 #links {
@@ -45,7 +49,8 @@ header {
   margin-top: 100px;
   border: 2px #ffffff groove;
   background-color: rgb(42, 42, 42);
-  width: 938px;
+  width: 50%;
+  flex-wrap: wrap;
 }
 
 li {
@@ -68,4 +73,19 @@ a {
 
 a:hover {
   color: rgb(177, 98, 134);
+}
+
+@media (max-width: 600px) {
+  #search-bar,
+  #links {
+    width: 100%;
+  }
+
+  header {
+    margin-top: 20px;
+  }
+
+  #links {
+    margin-top: 50px;
+  }
 }
